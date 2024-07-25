@@ -1,0 +1,10 @@
+requests
+Flask
+Flask-Cors
+bcrypt
+PyJWT
+SQLAlchemy
+pylint
+python-dotenv
+Flask-WTF
+pymongo
