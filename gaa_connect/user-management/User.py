@@ -19,6 +19,7 @@ class User:
         self.username = username
         self.email = email
         self.password_hash = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        self.is_admin = False
         self.bio = bio
         self.club = club
         self.county = county
@@ -45,6 +46,7 @@ class User:
             "username": self.username,
             "email": self.email,
             "password_hash": self.password_hash,
+            "is_admin": self.is_admin,
             "bio": self.bio,
             "club": self.club,
             "county": self.county,
